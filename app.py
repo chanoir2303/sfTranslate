@@ -6,9 +6,22 @@ load_dotenv()
 
 app = Flask(__name__)
 
+options = {
+    'English': 'en',
+    'Turkish': 'tr',
+    'French': 'fr',
+    'Italian': 'it',
+    'Russian': 'ru',
+    'German': 'de',
+    'Japanese': 'ja',
+    'Chinese (Simplified)': 'zh-Hans',
+    'Portuguese': 'pt-pt',
+    'Brazilian': 'pt'
+}
+
 @app.route('/', methods=['GET'])
 def index():
-    return render_template('/index.html')
+    return render_template('/index.html', options=options)
 
 
 @app.route('/', methods=['POST'])
@@ -51,5 +64,5 @@ def index_post():
         'results.html',
         translated_text=translated_text,
         original_text=original_text,
-        target_language=target_language
+        options=options
     )
