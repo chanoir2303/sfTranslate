@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    font-family: 'Roboto';
+}
+
+#header {
+    display: flex;
+    align-items: center;
+
+    width: 110%;
+    height: 75px;
+    margin: -10px;
+    padding-left: 15px;
+
+    background-color: #90b4ce;
+}
+
+#header-logo-title {
+    font-size: xx-large;
+    color: #094067;
+}
+
+
+.container-infos-title {
+    font-size: x-large;
+    color: #094067;
+}
+
+.container-infos-description {
+    color: #5f6c7b;
+}
+
+.form-text-area {
+    width: 45%;
+    margin: 10px;
+
+    border: 1px solid #90b4ce;
+}
+
+.form-translate-in {
+    color: #5f6c7b;
+}
+
+.form-selection {
+    width: 7vw;
+
+    border: 1px solid #3da9fc;
+    color: #094067;
+}
+
+.btn-start-translation {
+    width: 17vw;
+    height: 5vh;
+    margin-top: 15px;
+
+    background-color: #3da9fc;
+    color: #fffffe;
+    font-size: large;
+
+    border: none;
+    border-radius: 10px;
+}
+
+.btn-start-translation:hover {
+    background-color: #fffffe;
+    color: #3da9fc;
+    border: 1px solid #3da9fc;
+}
+
+.original-text, .translated-text, .target-language {
+    color: #5f6c7b;
+}
